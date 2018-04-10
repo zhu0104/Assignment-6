@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Assignment6</title>
+</head>
+<link rel="stylesheet" type="text/css" href="styles/Assignment6.css" />
+<script src="js/Assignment6.js"></script>
+<body>
+<body style="background-color:powderblue;">
+    <select onchange= "MenuChoice()" id="dropdown()">
+    <option id= "optionselect" value="optionselect">Select</option>
+    <option id="option1" value="section1">Adding Customers</option>
+    <option id="option2" value="section2">Updating Order Address</option>
+    <option id="option3" value="section3">Deleting Customers</option>
+</select>
+    
+<section id="section1">
+    <h1>Adding Customers</h1>
+<br>
+    <label>Please enter customer's ID</label>
+    <input type="text" id="custid">
+        <label class="example"> The customer ID should be 5 uppercase text characters.</label>
+        <br>
+    
+    <label>Please enter customer's Name</label>
+    <input type="text" id="custname">
+        <br>
+    <label>Please enter customer's City</label>
+    <input type="text" id="custcity">
+<br>
+    <button onclick="CreateCustomer()" id="newcust">Add a New Customer</button>
+    <br>
+        <hr>
+            <br>
+    <label id="result">The operation's result will display here.</label>
+    <hr>
+    <br>
+    
+</section>
+                            <!--end of section 1--> 
+
+<section id="section2">
+    <h1>Updating Order Address</h1>
+    <label>Please enter Order ID</label>
+    <input type="text" id="orderid">
+        <br>
+    
+    <label>Please enter shipping address</label>
+    <input type="text" id="shipaddress">
+        <br>
+            
+    <label>Please enter shipping city</label>
+    <input type="text" id="shipcity">
+        <br>
+            
+    <label>Please enter shipping name</label>
+    <input type="text" id="shipname">
+        <br>
+    
+    <label>Please enter postal code</label>
+    <input type="text" id="shippostcode">
+        <br>
+        
+        <button onclick="UpdateOrderAddress()" id="updateaddress">Update customer address</button>
+        <br>
+        <hr>
+            <br>
+        <label id="result2">The operation's result will display here.</label>
+        <hr>
+            <br>
+ </section>
+
+                            <!--end of section 2-->
+<section id="section3">
+    <h1>Deleting Customer</h1>
+    
+    <label>Please enter the Customer's ID</label>
+    <input type="text" id="deleteid">
+        <br>
+    <button onclick="DeleteCustomerID()" id="deletebtn">Delete</button>
+    <br>
+        <hr>
+            <br>
+    <label id="result3">The operation's result will display here.</label>
+    <hr>
+        <br>
+</section>
+
+                        <!--end of section 3-->
+
+
+
+
+
+</body>
+</html>
